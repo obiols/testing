@@ -1,0 +1,15 @@
+{
+	"devices": [
+		{
+			"type":	"Smartphone",
+			"revenue": 80000,
+			"impresions":	30000000,
+			"visits":	120000000
+		},{
+			"type":	"Tablet",
+			"revenue": 120000,
+			"impresions":	20000000,
+			"visits":	480000000
+		}
+	]
+}
