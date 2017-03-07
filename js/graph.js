@@ -17,10 +17,10 @@ define("graph", ["d3", "device"], function(d3) {
 		this.value1 = undefined;
 		this.value2 = undefined;
 
-        this.percent1 = undefined;
-        this.percent2 = undefined;
+		this.percent1 = undefined;
+		this.percent2 = undefined;
 
-        this.csv = csv;
+		this.csv = csv;
 
 	}
 
@@ -42,29 +42,29 @@ define("graph", ["d3", "device"], function(d3) {
 
 	Graph.prototype.setTitle = function (title) {
 		this.title = title;
-    };
+	};
 
 	Graph.prototype.setLabel1 = function(label) {
 		this.label1 = label;
 	};
 
-    Graph.prototype.setValue1 = function(value) {
-        this.value1 = value;
-    };
+	Graph.prototype.setValue1 = function(value) {
+		this.value1 = value;
+	};
 
-    Graph.prototype.setLabel2 = function(label) {
-        this.label2 = label;
-    };
+	Graph.prototype.setLabel2 = function(label) {
+		this.label2 = label;
+	};
 
-    Graph.prototype.setValue2 = function(value) {
-        this.value2 = value;
-    };
+	Graph.prototype.setValue2 = function(value) {
+		this.value2 = value;
+	};
 
-    Graph.prototype.setupData = function () {
-        this.total = this.value1 + this.value2;
-    	this.percent1 = this.value1 * 100 / this.total;
-    	this.percent2 = this.value2 * 100 / this.total;
-    };
+	Graph.prototype.setupData = function () {
+		this.total = this.value1 + this.value2;
+		this.percent1 = this.value1 * 100 / this.total;
+		this.percent2 = this.value2 * 100 / this.total;
+	};
 
 	Graph.prototype.createSVG = function() {
 		this.svg = d3.select("body").append("svg")
@@ -201,7 +201,7 @@ define("graph", ["d3", "device"], function(d3) {
 				.style("font-family", "Roboto")
 				.style("font-size", 30)
 				.style("fill", "rgb(169, 169, 169)")
-            .text(this.value1.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "€");
+			.text(this.value1.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "€");
 		/*----------------------------------------------*/ 
 		var label_2 = this.svg.append("text")
 			.attr("transform", "translate(" + this.width + ", 800)")

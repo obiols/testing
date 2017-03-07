@@ -27,10 +27,10 @@ define("controller", ["device", "graph"], function(Device, Graph) {
 
 			var graph1 = new Graph("js/data/data1.csv", "rgb(81, 216, 41)", "rgb(19, 108, 3)");
 			graph1.setTitle("REVENUE");
-        	graph1.setLabel1(dev1.getType());
+			graph1.setLabel1(dev1.getType());
 			graph1.setValue1(dev1.getRevenue());
-        	graph1.setLabel2(dev2.getType());
-        	graph1.setValue2(dev2.getRevenue());
+			graph1.setLabel2(dev2.getType());
+			graph1.setValue2(dev2.getRevenue());
 			graph1.init();
 
 			var graph2 = new Graph("js/data/data2.csv", "rgb(252, 196, 0)", "rgb(218, 95, 44)");

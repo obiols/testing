@@ -19,9 +19,9 @@ define("device", function() {
 		return this.visits;
 	};
 
-    Device.prototype.getType = function() {
-        return this.type;
-    };
+	Device.prototype.getType = function() {
+		return this.type;
+	};
 
 	return Device;
 });
